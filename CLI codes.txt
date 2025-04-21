@@ -1,0 +1,24 @@
+# to run python script from docker
+docker-compose run --rm app python script2.py
+# or
+docker-compose run app python script2.py
+
+
+# to build only the python app service from docker
+docker-compose up --build app
+# to build all
+docker-compose up --build
+
+
+# to connect to postgres interactive shell from docker
+docker exec -it pgdb psql -U olalekanrasaq1331 -d datawarehouse_db
+# to run postgres code directly
+docker exec -i pgdb psql -U olalekanrasaq1331 -d datawarehouse_db < FactBilling.sql
+
+
+# You can set up staging area by putting all the docker-postgres code into a sh script and run
+bash setupstagingarea.sh
+
+
+# to extract tar zipped files
+tar -xvzf billing-datawarehouse.tgz
