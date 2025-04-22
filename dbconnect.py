@@ -1,6 +1,6 @@
 import os
 import psycopg2
-pgpassword = "Analyst@100"
+pgpassword = "********"
 conn = None
 try:
     conn = psycopg2.connect(
