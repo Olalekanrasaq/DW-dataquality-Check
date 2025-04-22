@@ -7,7 +7,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: olalekanrasaq1331
-      POSTGRES_PASSWORD: Analyst@100
+      POSTGRES_PASSWORD: ******
     volumes:
       - local_pgdata:/var/lib/postgresql/data
     networks:
@@ -21,7 +21,7 @@ services:
       - "5050:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: olalekanrasaq1331@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: Analyst@10
+      PGADMIN_DEFAULT_PASSWORD: ******
     volumes:
       - pgadmin-data:/var/lib/pgadmin
     networks:
@@ -39,7 +39,7 @@ services:
     volumes:
       - .:/app
     working_dir: /app
-    command: ["python", "dbconnect.py", "dataqualitychecks.py", "generate-data-quality-report.py", "mytests.py"]  # Replace with your actual Python file
+    command: ["python"] 
 
 volumes:
   local_pgdata:
