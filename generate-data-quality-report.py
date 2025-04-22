@@ -12,7 +12,7 @@ from dataqualitychecks import check_for_duplicates
 from dataqualitychecks import run_data_quality_check
 
 # connect to database
-pgpassword = "Analyst@100"
+pgpassword = "******"
 conn = psycopg2.connect(
 		user = "olalekanrasaq1331",
 	    password = pgpassword,
