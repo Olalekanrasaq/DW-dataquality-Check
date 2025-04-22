@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "dbconnect.py", "dataqualitychecks.py", "generate-data-quality-report.py", "mytests.py"]
+CMD ["python"]
